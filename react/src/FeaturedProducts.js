@@ -3,8 +3,8 @@ import React from 'react';
 import FeaturedProductsList from './FeaturedProductsList';
 
 export default class FeaturedProducts extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {data: [
       {id: 1, href: "#", title: "Your working week, sorted", linktext: "Shop 9-5 style"},

@@ -3,8 +3,8 @@ import React from 'react';
 import NavigationLink from './NavigationLink';
 
 export default class Navigation extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {data: [
       {id: 1, href: "#", title: "Maternity Clothes"},
