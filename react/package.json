@@ -4,7 +4,9 @@
   "description": "React eval",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --bail",
+    "test:watch": "jest --watch --bail",
+    "test:debug": "node debug --debug-brk ./node_modules/.bin/jest -i"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
