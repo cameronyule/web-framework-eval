@@ -1,0 +1,25 @@
+exports[`FeaturedProducts renders correctly 1`] = `
+<section
+  className="featuredproducts">
+  <FeaturedProduct
+    description="Shop 9-5 style"
+    href="#"
+    id={1}
+    title="Your working week, sorted" />
+  <FeaturedProduct
+    description="Shop tops"
+    href="#"
+    id={2}
+    title="Half your daily uniform" />
+  <FeaturedProduct
+    description="Shop dresses"
+    href="#"
+    id={3}
+    title="Let\'s dress this bump" />
+  <FeaturedProduct
+    description="Shop maternity essentials"
+    href="#"
+    id={4}
+    title="Layers to lean on" />
+</section>
+`;

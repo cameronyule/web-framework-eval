@@ -1,0 +1,26 @@
+exports[`Navigation renders correctly 1`] = `
+<nav>
+  <ul>
+    <NavigationLink
+      href="#"
+      id={1}
+      title="Maternity Clothes" />
+    <NavigationLink
+      href="#"
+      id={2}
+      title="New Arrivals" />
+    <NavigationLink
+      href="#"
+      id={3}
+      title="Dresses" />
+    <NavigationLink
+      href="#"
+      id={4}
+      title="Tops" />
+    <NavigationLink
+      href="#"
+      id={5}
+      title="Tees" />
+  </ul>
+</nav>
+`;

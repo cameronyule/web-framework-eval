@@ -4,7 +4,7 @@ const FeaturedProduct = (props) => (
   <div className="featuredproduct">
     <a href={props.href}>
       <p>{props.title}</p>
-      <p>{props.linktext}</p>
+      <p>{props.description}</p>
     </a>
   </div>
 );
@@ -12,7 +12,7 @@ const FeaturedProduct = (props) => (
 FeaturedProduct.propTypes = {
   href: React.PropTypes.string.isRequired,
   title: React.PropTypes.string.isRequired,
-  linktext: React.PropTypes.string.isRequired
+  description: React.PropTypes.string.isRequired
 }
 
 export default FeaturedProduct;

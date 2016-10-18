@@ -1,0 +1,8 @@
+exports[`NavigationLink renders correctly 1`] = `
+<li>
+  <a
+    href="#">
+    Link
+  </a>
+</li>
+`;

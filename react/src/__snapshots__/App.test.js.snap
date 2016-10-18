@@ -1,0 +1,66 @@
+exports[`App renders correctly 1`] = `
+<div>
+  <Header
+    title="Header" />
+  <Navigation
+    data={
+      Array [
+        Object {
+          "href": "#",
+          "id": 1,
+          "title": "Maternity Clothes",
+        },
+        Object {
+          "href": "#",
+          "id": 2,
+          "title": "New Arrivals",
+        },
+        Object {
+          "href": "#",
+          "id": 3,
+          "title": "Dresses",
+        },
+        Object {
+          "href": "#",
+          "id": 4,
+          "title": "Tops",
+        },
+        Object {
+          "href": "#",
+          "id": 5,
+          "title": "Tees",
+        },
+      ]
+    } />
+  <FeaturedProducts
+    data={
+      Array [
+        Object {
+          "description": "Shop 9-5 style",
+          "href": "#",
+          "id": 1,
+          "title": "Your working week, sorted",
+        },
+        Object {
+          "description": "Shop tops",
+          "href": "#",
+          "id": 2,
+          "title": "Half your daily uniform",
+        },
+        Object {
+          "description": "Shop dresses",
+          "href": "#",
+          "id": 3,
+          "title": "Let\'s dress this bump",
+        },
+        Object {
+          "description": "Shop maternity essentials",
+          "href": "#",
+          "id": 4,
+          "title": "Layers to lean on",
+        },
+      ]
+    } />
+  <Footer />
+</div>
+`;

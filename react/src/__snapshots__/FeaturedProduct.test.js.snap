@@ -1,0 +1,14 @@
+exports[`FeaturedProduct renders correctly 1`] = `
+<div
+  className="featuredproduct">
+  <a
+    href="#">
+    <p>
+      Test
+    </p>
+    <p>
+      A Test
+    </p>
+  </a>
+</div>
+`;
