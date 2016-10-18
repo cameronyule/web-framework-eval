@@ -2,11 +2,11 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {shallowToJson} from 'enzyme-to-json';
 
-import App from './App.js';
-import Header from './Header';
-import Navigation from './Navigation';
-import FeaturedProducts from './FeaturedProducts';
-import Footer from './Footer';
+import App from 'App';
+import Header from 'Header';
+import Navigation from 'Navigation';
+import FeaturedProducts from 'FeaturedProducts';
+import Footer from 'Footer';
 
 describe('App', () => {
   it('renders correctly', () => {

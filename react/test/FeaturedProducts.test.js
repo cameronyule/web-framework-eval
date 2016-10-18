@@ -2,8 +2,8 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {shallowToJson} from 'enzyme-to-json';
 
-import FeaturedProducts from './FeaturedProducts';
-import FeaturedProduct from './FeaturedProduct';
+import FeaturedProducts from 'FeaturedProducts';
+import FeaturedProduct from 'FeaturedProduct';
 
 describe('FeaturedProducts', () => {
   let products;

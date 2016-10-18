@@ -2,8 +2,8 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {shallowToJson} from 'enzyme-to-json';
 
-import Navigation from './Navigation';
-import NavigationLink from './NavigationLink';
+import Navigation from 'Navigation';
+import NavigationLink from 'NavigationLink';
 
 describe('Navigation', () => {
   let links;

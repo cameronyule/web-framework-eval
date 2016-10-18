@@ -2,7 +2,7 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {shallowToJson} from 'enzyme-to-json';
 
-import NavigationLink from './NavigationLink';
+import NavigationLink from 'NavigationLink';
 
 describe('NavigationLink', () => {
   it('renders correctly', () => {
