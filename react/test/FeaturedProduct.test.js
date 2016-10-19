@@ -2,16 +2,19 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {shallowToJson} from 'enzyme-to-json';
 
-import FeaturedProduct from 'FeaturedProduct';
+import FeaturedProduct from '../src/FeaturedProduct';
 
 describe('FeaturedProduct', () => {
   let validElement;
 
   beforeEach(() => {
-    validElement = <FeaturedProduct href='#'
-                                    title='Test'
-                                    description='A Test' />;
-  })
+    validElement = (
+      <FeaturedProduct
+        href="#"
+        title="Test"
+        description="A Test"
+      />);
+  });
 
   it('renders correctly', () => {
     const wrapper = shallow(validElement);
@@ -20,14 +23,17 @@ describe('FeaturedProduct', () => {
 
   it('has a valid class', () => {
     const wrapper = shallow(validElement);
-     expect(wrapper.at(0).prop('className')).toEqual('featuredproduct');
+    expect(wrapper.at(0).prop('className')).toEqual('featuredproduct');
   });
 
   it('requires an href', () => {
     /* eslint-disable no-console */
     console.error = jest.fn();
-    shallow(<FeaturedProduct title='Test'
-                             description='A Test' />);
+    shallow(
+      <FeaturedProduct
+        title="Test"
+        description="A Test"
+      />);
     expect(console.error).toBeCalled();
     expect(console.error.mock.calls[0][0]).toContain('href');
     /* eslint-enable no-console */
@@ -41,8 +47,11 @@ describe('FeaturedProduct', () => {
   it('requires a title', () => {
     /* eslint-disable no-console */
     console.error = jest.fn();
-    shallow(<FeaturedProduct href='#'
-                             description='A Test' />);
+    shallow(
+      <FeaturedProduct
+        href="#"
+        description="A Test"
+      />);
     expect(console.error).toBeCalled();
     expect(console.error.mock.calls[0][0]).toContain('title');
     /* eslint-enable no-console */
@@ -56,8 +65,11 @@ describe('FeaturedProduct', () => {
   it('requires a description', () => {
     /* eslint-disable no-console */
     console.error = jest.fn();
-    shallow(<FeaturedProduct href='#'
-                             title='Test' />);
+    shallow(
+      <FeaturedProduct
+        href="#"
+        title="Test"
+      />);
     expect(console.error).toBeCalled();
     expect(console.error.mock.calls[0][0]).toContain('description');
     /* eslint-enable no-console */
@@ -67,4 +79,4 @@ describe('FeaturedProduct', () => {
     const wrapper = shallow(validElement);
     expect(wrapper.find('p').at(1).text()).toEqual('A Test');
   });
-})
+});

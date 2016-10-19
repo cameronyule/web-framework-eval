@@ -2,8 +2,8 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {shallowToJson} from 'enzyme-to-json';
 
-import Navigation from 'Navigation';
-import NavigationLink from 'NavigationLink';
+import Navigation from '../src/Navigation';
+import NavigationLink from '../src/NavigationLink';
 
 describe('Navigation', () => {
   let links;
@@ -14,7 +14,7 @@ describe('Navigation', () => {
       {id: 2, href: '#', title: 'Knitwear'},
       {id: 3, href: '#', title: 'Shirts'},
       {id: 4, href: '#', title: 'Tops'},
-      {id: 5, href: '#', title: 'Trousers'}
+      {id: 5, href: '#', title: 'Trousers'},
     ];
   });
 
@@ -35,16 +35,22 @@ describe('Navigation', () => {
   });
 
   it('creates a NavigationLink per item', () => {
-    const wrapper = shallow(<Navigation data={links} />);
+    const wrapper = shallow(
+      <Navigation
+        data={links}
+      />);
     expect(wrapper.find(NavigationLink).length).toEqual(5);
   });
 
   it('uses the order defined in the input data array', () => {
-    const wrapper = shallow(<Navigation data={links} />);
+    const wrapper = shallow(
+      <Navigation
+        data={links}
+      />);
     const linksWrapper = wrapper.find(NavigationLink);
 
-    const ids = links.map((o) => { return o.id; });
-    const linkIDs = linksWrapper.map((l) => { return parseInt(l.key()); })
+    const ids = links.map(o => o.id);
+    const linkIDs = linksWrapper.map(l => parseInt(l.key(), 10));
 
     expect(linkIDs).toEqual(ids);
   });

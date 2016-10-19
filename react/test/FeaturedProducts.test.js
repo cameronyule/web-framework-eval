@@ -2,8 +2,8 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {shallowToJson} from 'enzyme-to-json';
 
-import FeaturedProducts from 'FeaturedProducts';
-import FeaturedProduct from 'FeaturedProduct';
+import FeaturedProducts from '../src/FeaturedProducts';
+import FeaturedProduct from '../src/FeaturedProduct';
 
 describe('FeaturedProducts', () => {
   let products;
@@ -21,12 +21,15 @@ describe('FeaturedProducts', () => {
       green has received the green light.`},
       {id: 4, href: '#', title: 'Coat Tales', description: `Whether you favour a
       short jacket or a long overcoat, this season’s outerwear is a tale of two
-      halves. Discover AW16’s most essential investments.`}
+      halves. Discover AW16’s most essential investments.`},
     ];
   });
 
   it('renders correctly', () => {
-    const wrapper = shallow(<FeaturedProducts data={products} />);
+    const wrapper = shallow(
+      <FeaturedProducts
+        data={products}
+      />);
     expect(shallowToJson(wrapper)).toMatchSnapshot();
   });
 
@@ -42,17 +45,23 @@ describe('FeaturedProducts', () => {
   });
 
   it('creates a featured product per item', () => {
-    const wrapper = shallow(<FeaturedProducts data={products} />);
+    const wrapper = shallow(
+      <FeaturedProducts
+        data={products}
+      />);
     expect(wrapper.find(FeaturedProduct).length).toEqual(4);
   });
 
   it('uses the order defined in the input data array', () => {
-    const wrapper = shallow(<FeaturedProducts data={products} />);
+    const wrapper = shallow(
+      <FeaturedProducts
+        data={products}
+      />);
     const productsWrapper = wrapper.find(FeaturedProduct);
 
-    const ids = products.map((o) => { return o.id; });
-    const productIDs = productsWrapper.map((l) => { return parseInt(l.key()); })
+    const ids = products.map(o => o.id);
+    const productIDs = productsWrapper.map(l => parseInt(l.key(), 10));
 
     expect(productIDs).toEqual(ids);
   });
-})
+});

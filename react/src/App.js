@@ -10,7 +10,7 @@ const navigation = [
   {id: 2, href: '#', title: 'Knitwear'},
   {id: 3, href: '#', title: 'Shirts'},
   {id: 4, href: '#', title: 'Tops'},
-  {id: 5, href: '#', title: 'Trousers'}
+  {id: 5, href: '#', title: 'Trousers'},
 ];
 
 const products = [
@@ -25,7 +25,7 @@ const products = [
   green has received the green light.`},
   {id: 4, href: '#', title: 'Coat Tales', description: `Whether you favour a
   short jacket or a long overcoat, this season’s outerwear is a tale of two
-  halves. Discover AW16’s most essential investments.`}
+  halves. Discover AW16’s most essential investments.`},
 ];
 
 const App = () =>

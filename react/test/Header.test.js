@@ -2,7 +2,7 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import {shallowToJson} from 'enzyme-to-json';
 
-import Header from 'Header';
+import Header from '../src/Header';
 
 describe('Header', () => {
   it('renders correctly', () => {
@@ -16,7 +16,7 @@ describe('Header', () => {
   });
 
   it('accepts a title', () => {
-    const wrapper = shallow(<Header title='Hello' />);
+    const wrapper = shallow(<Header title="Hello" />);
     expect(wrapper.text()).toEqual('Hello');
   });
-})
+});
