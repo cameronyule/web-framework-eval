@@ -1,6 +1,6 @@
 {
   extends: [
-    'eslint:recommended', 'plugin:react/recommended'
+    'airbnb'
   ],
   parserOptions: {
     ecmaVersion: 6,
@@ -15,6 +15,15 @@
     'react'
   ],
   rules: {
-    quotes: ['error', 'single', {avoidEscape: true}]
+    'object-curly-spacing': 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          "**/*.test.js"
+        ],
+      },
+    ],
+    'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx'] }],
   }
 }
