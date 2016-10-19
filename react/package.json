@@ -4,18 +4,25 @@
   "description": "React eval",
   "main": "src/index.js",
   "scripts": {
+    "start": "webpack-dev-server --progress --colors",
+    "build": "webpack",
     "test": "jest --bail",
     "test:watch": "jest --watch --bail",
-    "test:debug": "node debug --debug-brk ./node_modules/.bin/jest -i"
+    "test:debug": "node debug --debug-brk ./node_modules/.bin/jest -i",
+    "test:lint": "eslint . --ext .js,.jsx"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
+    "babel-eslint": "^7.0.0",
     "babel-jest": "^16.0.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "enzyme": "^2.5.1",
     "enzyme-to-json": "^1.1.4",
+    "eslint": "^3.8.1",
+    "eslint-loader": "^1.6.0",
+    "eslint-plugin-react": "^6.4.1",
     "jest": "^16.0.1",
     "react-addons-test-utils": "^15.3.2",
     "react-test-renderer": "^15.3.2",
@@ -27,6 +34,9 @@
     "react-dom": "^15.3.2"
   },
   "jest": {
-    "moduleDirectories": ["node_modules", "src"]
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
   }
 }
