@@ -4,15 +4,15 @@ exports[`Navigation renders correctly 1`] = `
     <NavigationLink
       href="#"
       id={1}
-      title="Maternity Clothes" />
+      title="Coats & Jackets" />
     <NavigationLink
       href="#"
       id={2}
-      title="New Arrivals" />
+      title="Knitwear" />
     <NavigationLink
       href="#"
       id={3}
-      title="Dresses" />
+      title="Shirts" />
     <NavigationLink
       href="#"
       id={4}
@@ -20,7 +20,7 @@ exports[`Navigation renders correctly 1`] = `
     <NavigationLink
       href="#"
       id={5}
-      title="Tees" />
+      title="Trousers" />
   </ul>
 </nav>
 `;
