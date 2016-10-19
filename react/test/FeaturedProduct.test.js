@@ -25,8 +25,8 @@ describe('FeaturedProduct', () => {
 
   it('requires an href', () => {
     console.error = jest.fn();
-    const wrapper = shallow(<FeaturedProduct title='Test'
-                                             description='A Test' />);
+    shallow(<FeaturedProduct title='Test'
+                             description='A Test' />);
     expect(console.error).toBeCalled();
     expect(console.error.mock.calls[0][0]).toContain('href');
   });
@@ -38,8 +38,8 @@ describe('FeaturedProduct', () => {
 
   it('requires a title', () => {
     console.error = jest.fn();
-    const wrapper = shallow(<FeaturedProduct href='#'
-                                             description='A Test' />);
+    shallow(<FeaturedProduct href='#'
+                             description='A Test' />);
     expect(console.error).toBeCalled();
     expect(console.error.mock.calls[0][0]).toContain('title');
   });
@@ -51,8 +51,8 @@ describe('FeaturedProduct', () => {
 
   it('requires a description', () => {
     console.error = jest.fn();
-    const wrapper = shallow(<FeaturedProduct href='#'
-                                             title='Test' />);
+    shallow(<FeaturedProduct href='#'
+                             title='Test' />);
     expect(console.error).toBeCalled();
     expect(console.error.mock.calls[0][0]).toContain('description');
   });

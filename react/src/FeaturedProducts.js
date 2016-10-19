@@ -11,7 +11,7 @@ const FeaturedProducts = (props) =>
     });
 
     return (
-      <section className="featuredproducts">
+      <section className='featuredproducts'>
         {featuredProducts}
       </section>
     )

@@ -10,10 +10,18 @@ describe('FeaturedProducts', () => {
 
   beforeEach(() => {
     products = [
-      {id: 1, href: "#", title: "Your working week, sorted", description: "Shop 9-5 style"},
-      {id: 2, href: "#", title: "Half your daily uniform", description: "Shop tops"},
-      {id: 3, href: "#", title: "Let's dress this bump", description: "Shop dresses"},
-      {id: 4, href: "#", title: "Layers to lean on", description: "Shop maternity essentials"}
+      {id: 1, href: '#', title: 'Knit Picks', description: `Versatility, quality
+      and diverse design mean that in AW16’s knitwear collection, there’s a style
+      to suit every man no matter his taste or need.`},
+      {id: 2, href: '#', title: 'Collaborations', description: `A collection of
+      products which will enable your life to be lived that little bit more
+      stylishly.`},
+      {id: 3, href: '#', title: 'The Green Light', description: `Don’t let your
+      autumn/winter wardrobe become a uniform of black, navy and grey. For AW16
+      green has received the green light.`},
+      {id: 4, href: '#', title: 'Coat Tales', description: `Whether you favour a
+      short jacket or a long overcoat, this season’s outerwear is a tale of two
+      halves. Discover AW16’s most essential investments.`}
     ];
   });
 
@@ -25,7 +33,7 @@ describe('FeaturedProducts', () => {
   it('requires an array of product data', () => {
     expect(() => {
       console.error = jest.fn();
-      const wrapper = shallow(<FeaturedProducts />);
+      shallow(<FeaturedProducts />);
       expect(console.error).toBeCalled();
       expect(console.error.mock.calls[0][0]).toContain('data');
     }).toThrow();

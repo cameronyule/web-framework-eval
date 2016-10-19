@@ -1,7 +1,7 @@
 import React from 'react';
 
 const FeaturedProduct = (props) => (
-  <div className="featuredproduct">
+  <div className='featuredproduct'>
     <a href={props.href}>
       <p>{props.title}</p>
       <p>{props.description}</p>

@@ -12,7 +12,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  title: "Header"
+  title: 'Header'
 }
 
 export default Header;

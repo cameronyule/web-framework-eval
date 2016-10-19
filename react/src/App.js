@@ -28,7 +28,7 @@ const products = [
   halves. Discover AW16’s most essential investments.`}
 ];
 
-const App = (props) =>
+const App = () =>
   (
     <div>
       <Header />

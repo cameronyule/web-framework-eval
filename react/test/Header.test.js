@@ -16,7 +16,7 @@ describe('Header', () => {
   });
 
   it('accepts a title', () => {
-    const wrapper = shallow(<Header title="Hello" />);
+    const wrapper = shallow(<Header title='Hello' />);
     expect(wrapper.text()).toEqual('Hello');
   });
 })

@@ -10,11 +10,11 @@ describe('Navigation', () => {
 
   beforeEach(() => {
     links = [
-      {id: 1, href: '#', title: 'Maternity Clothes'},
-      {id: 2, href: '#', title: 'New Arrivals'},
-      {id: 3, href: '#', title: 'Dresses'},
+      {id: 1, href: '#', title: 'Coats & Jackets'},
+      {id: 2, href: '#', title: 'Knitwear'},
+      {id: 3, href: '#', title: 'Shirts'},
       {id: 4, href: '#', title: 'Tops'},
-      {id: 5, href: '#', title: 'Tees'}
+      {id: 5, href: '#', title: 'Trousers'}
     ];
   });
 
@@ -26,7 +26,7 @@ describe('Navigation', () => {
   it('requires an array of navigation link data', () => {
     expect(() => {
       console.error = jest.fn();
-      const wrapper = shallow(<Navigation />);
+      shallow(<Navigation />);
       expect(console.error).toBeCalled();
       expect(console.error.mock.calls[0][0]).toContain('data');
     }).toThrow();
