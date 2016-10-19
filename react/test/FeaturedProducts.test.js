@@ -32,10 +32,12 @@ describe('FeaturedProducts', () => {
 
   it('requires an array of product data', () => {
     expect(() => {
+      /* eslint-disable no-console */
       console.error = jest.fn();
       shallow(<FeaturedProducts />);
       expect(console.error).toBeCalled();
       expect(console.error.mock.calls[0][0]).toContain('data');
+      /* eslint-enable no-console */
     }).toThrow();
   });
 

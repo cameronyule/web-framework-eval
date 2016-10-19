@@ -25,10 +25,12 @@ describe('Navigation', () => {
 
   it('requires an array of navigation link data', () => {
     expect(() => {
+      /* eslint-disable no-console */
       console.error = jest.fn();
       shallow(<Navigation />);
       expect(console.error).toBeCalled();
       expect(console.error.mock.calls[0][0]).toContain('data');
+      /* eslint-enable no-console */
     }).toThrow();
   });
 

@@ -24,11 +24,13 @@ describe('FeaturedProduct', () => {
   });
 
   it('requires an href', () => {
+    /* eslint-disable no-console */
     console.error = jest.fn();
     shallow(<FeaturedProduct title='Test'
                              description='A Test' />);
     expect(console.error).toBeCalled();
     expect(console.error.mock.calls[0][0]).toContain('href');
+    /* eslint-enable no-console */
   });
 
   it('accepts an href', () => {
@@ -37,11 +39,13 @@ describe('FeaturedProduct', () => {
   });
 
   it('requires a title', () => {
+    /* eslint-disable no-console */
     console.error = jest.fn();
     shallow(<FeaturedProduct href='#'
                              description='A Test' />);
     expect(console.error).toBeCalled();
     expect(console.error.mock.calls[0][0]).toContain('title');
+    /* eslint-enable no-console */
   });
 
   it('accepts a title', () => {
@@ -50,11 +54,13 @@ describe('FeaturedProduct', () => {
   });
 
   it('requires a description', () => {
+    /* eslint-disable no-console */
     console.error = jest.fn();
     shallow(<FeaturedProduct href='#'
                              title='Test' />);
     expect(console.error).toBeCalled();
     expect(console.error.mock.calls[0][0]).toContain('description');
+    /* eslint-enable no-console */
   });
 
   it('accepts a description', () => {

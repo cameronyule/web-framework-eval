@@ -15,7 +15,6 @@
     'react'
   ],
   rules: {
-    'no-console': 'off',
     quotes: ['error', 'single', {avoidEscape: true}]
   }
 }
