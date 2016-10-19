@@ -8,17 +8,17 @@ exports[`App renders correctly 1`] = `
         Object {
           "href": "#",
           "id": 1,
-          "title": "Maternity Clothes",
+          "title": "Coats & Jackets",
         },
         Object {
           "href": "#",
           "id": 2,
-          "title": "New Arrivals",
+          "title": "Knitwear",
         },
         Object {
           "href": "#",
           "id": 3,
-          "title": "Dresses",
+          "title": "Shirts",
         },
         Object {
           "href": "#",
@@ -28,7 +28,7 @@ exports[`App renders correctly 1`] = `
         Object {
           "href": "#",
           "id": 5,
-          "title": "Tees",
+          "title": "Trousers",
         },
       ]
     } />
@@ -36,28 +36,36 @@ exports[`App renders correctly 1`] = `
     data={
       Array [
         Object {
-          "description": "Shop 9-5 style",
+          "description": "Versatility, quality
+        and diverse design mean that in AW16’s knitwear collection, there’s a style
+        to suit every man no matter his taste or need.",
           "href": "#",
           "id": 1,
-          "title": "Your working week, sorted",
+          "title": "Knit Picks",
         },
         Object {
-          "description": "Shop tops",
+          "description": "A collection of
+        products which will enable your life to be lived that little bit more
+        stylishly.",
           "href": "#",
           "id": 2,
-          "title": "Half your daily uniform",
+          "title": "Collaborations",
         },
         Object {
-          "description": "Shop dresses",
+          "description": "Don’t let your
+        autumn/winter wardrobe become a uniform of black, navy and grey. For AW16
+        green has received the green light.",
           "href": "#",
           "id": 3,
-          "title": "Let\'s dress this bump",
+          "title": "The Green Light",
         },
         Object {
-          "description": "Shop maternity essentials",
+          "description": "Whether you favour a
+        short jacket or a long overcoat, this season’s outerwear is a tale of two
+        halves. Discover AW16’s most essential investments.",
           "href": "#",
           "id": 4,
-          "title": "Layers to lean on",
+          "title": "Coat Tales",
         },
       ]
     } />
